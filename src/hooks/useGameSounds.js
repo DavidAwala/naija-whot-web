@@ -3,18 +3,18 @@ import { useRef } from "react";
 
 const useGameSounds = (isMuted = false) => {
   const sounds = useRef({
-    error: new Audio("/sounds/error-play.mp3"),
-    cardPlay: new Audio("/sounds/card-play.mp3"),
-    background: new Audio("/sounds/background-theme.mp3"),
-    pickTwo: new Audio("/sounds/pick-two.mp3"),
-    pickThree: new Audio("/sounds/pick-three.mp3"),
-    generalMarket: new Audio("/sounds/general-market.mp3"),
-    youWin: new Audio("/sounds/you-win.mp3"),
-    congrats: new Audio("/sounds/congrats.mp3"),
-    reshuffle: new Audio("/sounds/reshuffle.mp3"),
-    drawCard: new Audio("/sounds/draw-card.mp3"),
-    holdOn: new Audio("/sounds/hold-on.mp3"),
-    suspension: new Audio("/sounds/suspension.mp3"),
+    error: new Audio(`${import.meta.env.BASE_URL}sounds/error-play.mp3`),
+  cardPlay: new Audio(`${import.meta.env.BASE_URL}sounds/card-play.mp3`),
+  background: new Audio(`${import.meta.env.BASE_URL}sounds/background-theme.mp3`),
+  pickTwo: new Audio(`${import.meta.env.BASE_URL}sounds/pick-two.mp3`),
+  pickThree: new Audio(`${import.meta.env.BASE_URL}sounds/pick-three.mp3`),
+  generalMarket: new Audio(`${import.meta.env.BASE_URL}sounds/general-market.mp3`),
+  youWin: new Audio(`${import.meta.env.BASE_URL}sounds/you-win.mp3`),
+  congrats: new Audio(`${import.meta.env.BASE_URL}sounds/congrats.mp3`),
+  reshuffle: new Audio(`${import.meta.env.BASE_URL}sounds/reshuffle.mp3`),
+  drawCard: new Audio(`${import.meta.env.BASE_URL}sounds/draw-card.mp3`),
+  holdOn: new Audio(`${import.meta.env.BASE_URL}sounds/hold-on.mp3`),
+  suspension: new Audio(`${import.meta.env.BASE_URL}sounds/suspension.mp3`)
   });
 
   // Make background loop and adjust volume
