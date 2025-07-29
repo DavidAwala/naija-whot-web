@@ -1,0 +1,18 @@
+
+.cardb {
+  width: 80px;
+  height: 120px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+

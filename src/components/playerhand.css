@@ -1,0 +1,23 @@
+.player-hand {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  /* white-space: nowrap; */
+}
+
+.player-hand::-webkit-scrollbar {
+  height: 8px;
+}
+
+.player-hand::-webkit-scrollbar-thumb {
+  background-color: #004d2c;
+  border-radius: 4px;
+}
+
+.card {
+  flex-shrink: 0; /* prevent cards from shrinking */
+}
+

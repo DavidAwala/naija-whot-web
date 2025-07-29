@@ -1,0 +1,44 @@
+/* Entry from market with bounce, scale, and light spin */
+@keyframes slideInFromMarket {
+  0% {
+    transform: translateY(-120px) scale(0.4) rotate(-10deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10px) scale(1.05) rotate(3deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Exit to pile with arc motion, spin, shrink */
+@keyframes slide-to-pile {
+  0% {
+    transform: translateX(-100px);
+    opacity: 1;
+    z-index: 10;
+  }
+  50% {
+    transform: translateX(0px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+}
+
+.card-slide-to-pile {
+  animation: slide-to-pile 0.2s ease-in-out forwards;
+}
+
+
+.card.card-slide-in-hand {
+  animation: slideInFromMarket 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  z-index: 10;
+}
+
+
