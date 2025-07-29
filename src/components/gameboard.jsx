@@ -620,7 +620,7 @@ setTimeout(() => {
           <h3>Your Hand ({playerHand.length} cards)</h3>
         </div>
       </div>
-      <footer style={{ textAlign: 'right', marginTop: '20px', color: '#555' }}>
+      <footer style={{ textAlign: 'right', marginTop: '20px', color: 'white', backgroundColor: '#2b612a', padding: '10px', fontSize: '14px' }}>
         <p> &copy; 2025 Naija Whot Web</p>
         <p>Developed by <a target='_blank' href="https://mywebsiteagd.42web.io/?i=3">&lt;AGD/&gt;</a></p>
         <p>Version 1.0.0</p>
