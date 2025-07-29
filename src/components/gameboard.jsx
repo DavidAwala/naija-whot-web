@@ -66,7 +66,7 @@ export default function GameBoard() {
   const [message, setMessage] = useState('Game started. Your turn!');
   const [showHelp, setShowHelp] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const [cardColor, setCardColor] = useState(''); 
 
 
